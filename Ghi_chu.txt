@@ -1,0 +1,31 @@
+# Ký hiệu
+H: ở trên vị trí gắp vật
+L: ở vị trí tiếp xúc vật
+
+
+# Thông số:
+Size: 24x24
+Space: 12
+
+
+# Cách xử lý quy trình với các ô từ hàng 1 đến hàng 4:
+--> Đưa tay đến vị trí H (0.15)
+--> Từ vị trí H đưa xuống vị trí L với chiếu cao cách chess board là chess_height
+
+
+# Cách xử lý quy trình với các ô ở hàng 5 và 6:
+--> Đưa tay đến vị trí H (0.12)
+--> Từ vị trí H đưa xuống vị trí L với chiếu cao cách chess board là chess_height
+
+
+# Cách xử lý quy trình với các ô ở hàng 7 và 8:
+--> Đưa tay đến vị trí H (0.1)
+--> Kết hợp 2 chuyển động gập cổ tay và đưa xuống vị trí L với chiều cao tương tự trên
+
+
+# Chú thích các file:
+"AtoB.py": Cánh tay di chuyển cờ từ vị trí A sang vị trí B.
+"AtoB_out.txt": Test lần cuối các vị trí và thao tác của AtoB
+"test_HdownL.py": Test quãng đi xuống từ H đến L
+"test_pose.py": Check Pose có đáp ứng không
+"Robot_play": Giao tiếp giữa cánh tay robot và chess_engine
